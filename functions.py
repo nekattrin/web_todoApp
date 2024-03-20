@@ -1,4 +1,10 @@
-FILEPATH = r'C:/UcoursePy/the_greate_web_todoApp/todos.txt'
+from pathlib import Path
+
+path = Path(__file__).parent / "todos.txt"
+
+FILEPATH = path
+
+    #r'C:/UcoursePy/the_greate_web_todoApp/todos.txt'
 
 
 def get_todos(filepath=FILEPATH):
